@@ -1,4 +1,4 @@
-# page-offset-react - React JS
+# page-offset-react - React JS - Em Atualização
 
 ## O que a lib faz?
 

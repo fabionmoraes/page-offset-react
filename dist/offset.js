@@ -9,6 +9,6 @@ var offset = function (data) {
 };
 exports.offset = offset;
 var lastPage = function (paginate) {
-    return Number((paginate.total / paginate.limit).toFixed()) + 1;
+    return Number((paginate.total / paginate.limit).toFixed());
 };
 exports.lastPage = lastPage;

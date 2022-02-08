@@ -6,6 +6,7 @@ export interface IPageNextOrPrev {
 }
 interface IPageGet extends IPage {
     handleNextOrPrev?: any;
+    minNumber?: number;
 }
 export declare const Page: FC<IPageGet>;
 export {};
