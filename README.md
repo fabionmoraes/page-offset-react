@@ -1,20 +1,20 @@
-# page-offset-react - React JS - Em Atualização
+# page-offset-react - React JS
 
 ## O que a lib faz?
 
-A Lib faz a paginação utilizando o retorno da API via offset.
+- A Lib faz a paginação utilizando o retorno da API via offset.
+- Dessa forma deixa mais fácil para o backend apenas retornar OFFSET - TOTAL - LIMIT
 
 ## Para utilizar precisa?
 
 - API precisa ter o retorno
 
-```JSON
+```TS
   // {
   //   "data": {
   //     "offset": 0,
   //     "limit": 20,
   //     "total": 1559,
-  //     "count": 20,
   //     ...
   //   }
   // }
@@ -98,6 +98,8 @@ const App: React.FC = () => {
         },
     })
   }
+
+  // 1 2...4 5 6 7 8...130 Prev Next - retorno para html
 
   return(
     ...
