@@ -14,5 +14,4 @@ export interface IPaginate {
   offset: number;
   limit: number;
   total: number;
-  count: number;
 }
