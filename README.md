@@ -106,3 +106,37 @@ const App: React.FC = () => {
   )
 }
 ```
+
+### resultPaginate
+
+```tsx
+...
+import { resultPaginate } from 'page-offset-react';
+
+const App: React.FC = () => {
+
+  const paginate = resultPaginate({
+    paginate: {
+      limit: data.limit,
+      offset: data.offset,
+      total: data.total,
+    },
+    page: 1, //Página atual navegando
+    minNumber: 5, // Por default é 5 - Total de página que mostra array pages: [...]
+  });
+
+  // paginate: {
+  //   currentPage: 1
+  //   endIndex: 14 // QTD Final de Quantidade TO
+  //   endPage: 5 // Página Final
+  //   pageSize: 15 // Limit de pesquisa
+  //   pages: (5) [1, 2, 3, 4, 5]
+  //   startIndex: 0 // QTD de início FROM
+  //   startPage: 1 //
+  //   totalItems: 269 // Total
+  //   totalPages: 18 / Total de paginas
+  // }
+
+  return(...)
+}
+```

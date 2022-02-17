@@ -14,3 +14,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./offset"), exports);
 __exportStar(require("./page"), exports);
 __exportStar(require("./fromToTotal"), exports);
+__exportStar(require("./resultPaginate"), exports);
